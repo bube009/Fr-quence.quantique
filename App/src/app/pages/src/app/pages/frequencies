@@ -1,1 +1,41 @@
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
+import { FrequenciesService } from '../../services/frequencies.service'; // <-- DÉCOMMENTEZ OU AJOUTEZ CETTE LIGNE
 
+@Component({
+  selector: 'app-frequencies',
+  templateUrl: './frequencies.page.html',
+  styleUrls: ['./frequencies.page.scss'],
+  standalone: true,
+  imports: [IonicModule, CommonModule, FormsModule]
+})
+export class FrequenciesPage implements OnInit {
+  frequencies: any[] = [];
+
+  constructor(
+    private frequenciesService: FrequenciesService // <-- DÉCOMMENTEZ CETTE LIGNE
+  ) { }
+
+  ngOnInit() {
+    this.frequenciesService.getFrequencies().subscribe({ // <-- MODIFIEZ CETTE PARTIE
+      next: (data) => {
+        this.frequencies = data;
+      },
+      error: (err) => {
+        console.error('Erreur lors du chargement des fréquences:', err);
+      }
+    });
+  }
+
+  // Supprimez ou commentez la méthode temporaire car nous utilisons maintenant le service
+  // async loadFrequenciesFromAssets() {
+  //   const response = await fetch('/assets/frequencies.json');
+  //   if (response.ok) {
+  //     this.frequencies = await response.json();
+  //   } else {
+  //     console.error('Erreur lors du chargement des fréquences:', response.statusText);
+  //   }
+  // }
+}
