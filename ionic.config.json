@@ -1,7 +1,0 @@
-{
-  "name": "frequency.quantique",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
