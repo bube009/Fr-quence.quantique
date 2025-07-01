@@ -6,24 +6,24 @@
     "app":{
       "projectType": "application",
       "schematics": {},
-      "root": "",
-      "sourceRoot": "src",
+      "root": ""main",
+      "sourceRoot": "main",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/app",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "index": "main/index.html",
+            "main": "main/main.ts",
+            "polyfills": "main/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "main/favicon.ico",
+              "main/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "main/styles.css"
             ],
             "scripts": []
           }
