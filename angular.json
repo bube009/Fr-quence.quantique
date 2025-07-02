@@ -7,11 +7,12 @@
       "projectType": "application",
       "schematics": {},
       "root": ""
-      "sourceRoot": "main",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+      
+    
+      
+        
+          
+      ,"builder":"@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/app",
             "index": "main/index.html",
@@ -36,6 +37,4 @@
         }
       }
     }
-  },
-  "defaultProject": "app"
-}
+  
