@@ -1,1 +1,1 @@
- 'zone.js';
+import 'zone.js';
