@@ -2,19 +2,13 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {
+  "projects":"serve"
     "app":{
       "projectType": "application",
       "schematics": {},
-      "root": ""
-      
-    
-      
-        
-          
-      ,"builder":"@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/app",
+      "root": "serve"
+  
+          "outputPath": "dist/app",
             "index": "main/index.html",
             "main": "main/main.ts",
             "polyfills": "main/polyfills.ts",
