@@ -3,7 +3,7 @@
   "version":"1.0.0",
   "scripts":"{",
     "build":"ng build"
-  },
+  }
   "dependencies":"{",
     "@angular/common":"^16.2.0",
     "@angular/core":"^16.2.0"
