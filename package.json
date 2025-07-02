@@ -1,5 +1,5 @@
 {
-  "name": "frequency-quantique",
+  "name": "frequency.quantique",
   "version": "1.0.0",
   "scripts": {
     "build": "ng build"
@@ -11,5 +11,6 @@
   "devDependencies": {
     "@angular/cli": "^16.2.0",
     "typescript": "~5.1.3"
-  }
+    "@angular-devkit/build-angular"
+  }  
 }
